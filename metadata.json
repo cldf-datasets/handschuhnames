@@ -1,8 +1,8 @@
 {
-    "description": null,
+    "description": "A crosslinguistic study of sex-specific forms, classifiers, and gender marking on personal names",
     "id": "handschuhnames",
-    "license": null,
-    "url": null,
-    "citation": null,
-    "title": null
+    "license": "CC-BY-4.0",
+    "url": "https://doi.org/10.1515/stuf-2019-0021",
+    "citation": "Handschuh, C. (2019). The classification of names, STUF - Language Typology and Universals, 72(4), 539-572. doi: https://doi.org/10.1515/stuf-2019-0021",
+    "title": "The classification of names"
 }

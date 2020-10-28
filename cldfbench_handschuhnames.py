@@ -1,6 +1,8 @@
 import pathlib
+import collections
 
-from cldfbench import Dataset as BaseDataset
+from clldutils.misc import slug
+from cldfbench import Dataset as BaseDataset, CLDFSpec
 
 
 class Dataset(BaseDataset):
@@ -8,19 +10,60 @@ class Dataset(BaseDataset):
     id = "handschuhnames"
 
     def cldf_specs(self):  # A dataset must declare all CLDF sets it creates.
-        return super().cldf_specs()
+        return CLDFSpec(module='StructureDataset', dir=self.cldf_dir)
 
     def cmd_download(self, args):
-        """
-        Download files to the raw/ directory. You can use helpers methods of `self.raw_dir`, e.g.
-
-        >>> self.raw_dir.download(url, fname)
-        """
-        pass
+        self.raw_dir.xlsx2csv('Handschuh_Names.xlsx')
 
     def cmd_makecldf(self, args):
-        """
-        Convert the raw data to a CLDF dataset.
+        args.writer.cldf.add_component('LanguageTable')
+        args.writer.cldf.add_component('CodeTable')
+        args.writer.cldf.add_component('ParameterTable', 'Section')
+        sources = {r['Source']: r['Bibkey'] for r in self.etc_dir.read_csv('sources.csv', dicts=True)}
+        params = collections.OrderedDict()
+        for row in self.etc_dir.read_csv('parameters.csv', dicts=True):
+            params[row['ID']] = []
+            args.writer.objects['ParameterTable'].append(dict(
+                ID=slug(row['ID']),
+                Name=row['Name'],
+                Section=row['Section'],
+            ))
 
-        >>> args.writer.objects['LanguageTable'].append(...)
-        """
+        liso2gl = {l.iso: l for l in args.glottolog.api.languoids() if l.iso}
+        for i, row in enumerate(self.raw_dir.read_csv('Handschuh_Names.Tabelle1.csv', dicts=True)):
+            iso, glottocode = row['ISO'], None
+            if row['ISO'] == "nni/nxl":
+                iso, glottocode = None, "nuau1240"
+            glang = liso2gl[iso] if iso else args.glottolog.api.languoid(glottocode)
+
+            src = []
+            if (row['Source'] in sources) and sources[row['Source']]:
+                e = args.glottolog.api.bibfiles['hh.bib'][sources[row['Source']]]
+                src = [e.key]
+                args.writer.cldf.sources.add(str(e))
+
+            args.writer.objects['LanguageTable'].append(dict(
+                ID=slug(row['ISO']),
+                Name=row['Language'],
+                Glottocode=glang.id,
+                ISO639P3code=iso,
+                Latitude=glang.latitude,
+                Longitude=glang.longitude,
+            ))
+            for k in params:
+                if row[k] not in params[k]:
+                    params[k].append(row[k])
+                    args.writer.objects['CodeTable'].append(dict(
+                        ID='{}-{}'.format(slug(k), slug(row[k])),
+                        Name=row[k],
+                        Parameter_ID=slug(k),
+                    ))
+                args.writer.objects['ValueTable'].append(dict(
+                    ID='{}-{}'.format(iso, slug(k)),
+                    Code_ID='{}-{}'.format(slug(k), slug(row[k])),
+                    Value=row[k],
+                    Language_ID=slug(row['ISO']),
+                    Parameter_ID=slug(k),
+                    Source=src,
+                ))
+        args.writer.objects['CodeTable'] = sorted(args.writer.objects['CodeTable'], key=lambda i: i['ID'])

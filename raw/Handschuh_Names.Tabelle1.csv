@@ -1,0 +1,52 @@
+Language,ISO,Source,Domain,Boundedness,Transparency,Symmetry
+Abaza,abq,Čirikba (2007),onymic,bound,opaque,asymmetric
+Akan,aka,Agyekum (2006),onymic,phon. patt.,opaque,symmetric
+Anywa,anu,Reh (1996),onymic,bound,opaque,symmetric
+Arawak,arw,De Goeje (1928),onymic,bound,opaque,symmetric
+Azerbaijani,azj,Garibova (2007),compound,bound,transparent,symmetric
+Betta Kurumba,xub,Coelho (2003),onymic,bound,part. tran.,symmetric
+Chechen,che,Pleskalová (2007),onymic,bound,opaque,asymmetric
+Chuvash,chv,Johanson (2007),onymic,bound,part. tran.,asymmetric
+Dakota,dak,Riggs (1893),compound,bound,transparent,asymmetric
+Dom,doa,Tida (2006),onymic,free,transparent,symmetric
+Domari,rmt,Matras (2012),inflection,bound,opaque,symmetric
+Duna,duc,San Roque (2008),onymic,free,transparent,symmetric
+Garo,grt,Hvenekilde et al. (2000),onymic,phon. patt.,opaque,symmetric
+Greek (Modern),ell,Steffen (2007),inflection,bound,opaque,symmetric
+German,deu,Nübling & Dammel (2007),onymic,bound,opaque,asymmetric
+Gumuz,guk,Ahland (2012),onymic,bound,opaque,symmetric
+Hdi,xed,Frajzyngier (2002),onymic,bound,opaque,asymmetric
+Hidatsa,hid,Matthews (1873),compound,bound,transparent,asymmetric
+Iatmul,ian,Jendraschek (2012),onymic,bound,opaque,symmetric
+Ibibio,ibb,Ekpo (1978),onymic,bound,opaque,symmetric
+Icelandic,isl,Kvaran (2007),onymic,bound,opaque,asymmetric
+Kalmyk,xal,Schorkowitz (2007),onymic,bound,opaque,symmetric
+Kaqchikel,cak,Garcia Matzar et al. (1993),onymic,free,opaque,symmetric
+Kham,kjl,Watters (2004),onymic,bound,opaque,symmetric
+Kulina,xpk,Dienst (2014),inflection,bound,opaque,asymmetric
+Lahu,lhu,Matisoff (1973),onymic,bound,opaque,symmetric
+Lango,laj,Noonan (1992),onymic,bound,opaque,symmetric
+Latin,lat,Roby (2010 [1862]),inflection,bound,opaque,symmetric
+Luwo,lwo,Storch (2014),onymic,bound,opaque,symmetric
+Mamaindê,wmd,Eberhard (2009),derivation,bound,opaque,asymmetric
+Manambu,mle,Aikhenvald (2010),onymic,bound,opaque,symmetric
+Mangarayi,mpc,Merlan (1989),inflection,bound,opaque,symmetric
+Mavea,mkv,Guérin (2011),onymic,bound,opaque,symmetric
+Mongsen Ao,cas,Coupe (2007),derivation,bound,part. tran.,symmetric
+Nahavaq,sns,Dimock (2009),onymic,bound,opaque,symmetric
+Nandi,niq,Creider & Creider (1989),onymic,bound,opaque,symmetric
+Neverver,lgk,Barbour (2012),onymic,bound,opaque,symmetric
+Nuaulu,nni/nxl,Ellen (1983),onymic,bound,opaque,asymmetric
+Sa’a,apb,Ivens (1918),onymic,free,transparent,symmetric
+Seneca,see,Chafe (2014),onymic,bound,opaque,asymmetric
+Serbian,srp,Loma (2007),onymic,bound,opaque,asymmetric
+Sesotho,sot,Mohome (1972),onymic,bound,part. tran.,symmetric
+Sivisa Titan,ttv,Bowern (2011),onymic,free,opaque,symmetric
+Slovene,slv,Bergermayer (2007),onymic,bound,opaque,asymmetric
+Telugu,tel,Krishnamurti & Gwynn (1985),derivation,bound,opaque,symmetric
+Toba Batak,bbc,Van der Tuuk (1971),onymic,bound,part. tran.,asymmetric
+Toqabaqita,mlu,Lichtenberk (2008),onymic,bound,opaque,symmetric
+Tundra Nenets,yrk,Salminen (2007),compound,bound,transparent,asymmetric
+Unami,unm,Weslager (1971),compound,bound,transparent,asymmetric
+Unua,onu,Pearce (2015),onymic,bound,opaque,symmetric
+Wiru,wiu,Strathern (1970),onymic,bound,opaque,asymmetric

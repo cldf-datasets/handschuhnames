@@ -1,0 +1,13 @@
+ID,Parameter_ID,Name,Description
+boundedness-bound,boundedness,bound,
+boundedness-free,boundedness,free,
+boundedness-phonpatt,boundedness,phon. patt.,
+domain-compound,domain,compound,
+domain-derivation,domain,derivation,
+domain-inflection,domain,inflection,
+domain-onymic,domain,onymic,
+symmetry-asymmetric,symmetry,asymmetric,
+symmetry-symmetric,symmetry,symmetric,
+transparency-opaque,transparency,opaque,
+transparency-parttran,transparency,part. tran.,
+transparency-transparent,transparency,transparent,
