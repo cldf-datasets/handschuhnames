@@ -103,10 +103,10 @@ lhu-domain,lhu,domain,onymic,domain-onymic,,g:Matisoff:Lahu
 lhu-boundedness,lhu,boundedness,bound,boundedness-bound,,g:Matisoff:Lahu
 lhu-transparency,lhu,transparency,opaque,transparency-opaque,,g:Matisoff:Lahu
 lhu-symmetry,lhu,symmetry,symmetric,symmetry-symmetric,,g:Matisoff:Lahu
-laj-domain,laj,domain,onymic,domain-onymic,,g:Noonan:Lango:1981
-laj-boundedness,laj,boundedness,bound,boundedness-bound,,g:Noonan:Lango:1981
-laj-transparency,laj,transparency,opaque,transparency-opaque,,g:Noonan:Lango:1981
-laj-symmetry,laj,symmetry,symmetric,symmetry-symmetric,,g:Noonan:Lango:1981
+laj-domain,laj,domain,onymic,domain-onymic,,g:Noonan:Lango
+laj-boundedness,laj,boundedness,bound,boundedness-bound,,g:Noonan:Lango
+laj-transparency,laj,transparency,opaque,transparency-opaque,,g:Noonan:Lango
+laj-symmetry,laj,symmetry,symmetric,symmetry-symmetric,,g:Noonan:Lango
 lat-domain,lat,domain,inflection,domain-inflection,,
 lat-boundedness,lat,boundedness,bound,boundedness-bound,,
 lat-transparency,lat,transparency,opaque,transparency-opaque,,
@@ -131,10 +131,10 @@ mkv-domain,mkv,domain,onymic,domain-onymic,,g:Guerin:Mavea:2011
 mkv-boundedness,mkv,boundedness,bound,boundedness-bound,,g:Guerin:Mavea:2011
 mkv-transparency,mkv,transparency,opaque,transparency-opaque,,g:Guerin:Mavea:2011
 mkv-symmetry,mkv,symmetry,symmetric,symmetry-symmetric,,g:Guerin:Mavea:2011
-cas-domain,cas,domain,derivation,domain-derivation,,
-cas-boundedness,cas,boundedness,bound,boundedness-bound,,
-cas-transparency,cas,transparency,part. tran.,transparency-parttran,,
-cas-symmetry,cas,symmetry,symmetric,symmetry-symmetric,,
+cas-domain,cas,domain,derivation,domain-derivation,,g:Coupe:Mongsen-Ao
+cas-boundedness,cas,boundedness,bound,boundedness-bound,,g:Coupe:Mongsen-Ao
+cas-transparency,cas,transparency,part. tran.,transparency-parttran,,g:Coupe:Mongsen-Ao
+cas-symmetry,cas,symmetry,symmetric,symmetry-symmetric,,g:Coupe:Mongsen-Ao
 sns-domain,sns,domain,onymic,domain-onymic,,g:Dimock:Nahavaq
 sns-boundedness,sns,boundedness,bound,boundedness-bound,,g:Dimock:Nahavaq
 sns-transparency,sns,transparency,opaque,transparency-opaque,,g:Dimock:Nahavaq

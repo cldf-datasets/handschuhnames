@@ -3,11 +3,11 @@ abq,Abaza,,44.25,42.0,abaz1241,abq
 aka,Akan,,6.34756,-1.33254,akan1250,aka
 anu,Anywa,,7.57714,34.0267,anua1242,anu
 arw,Arawak,,5.64295,-56.9243,araw1276,arw
-azj,Azerbaijani,,40.9777,46.4737,nort2697,azj
+azj,Azerbaijani,,40.97768,46.4737,nort2697,azj
 xub,Betta Kurumba,,11.6385,76.6064,bett1235,xub
 che,Chechen,,43.5,45.5,chec1245,che
-chv,Chuvash,,55.487,47.163,chuv1255,chv
-dak,Dakota,,47.6857,-102.12,dako1258,dak
+chv,Chuvash,,55.48701,47.16298,chuv1255,chv
+dak,Dakota,,45.86,-96.58,dako1258,dak
 doa,Dom,,-6.03737,144.895,domm1246,doa
 rmt,Domari,,32.0,35.0,doma1258,rmt
 duc,Duna,,-5.41439,142.475,duna1248,duc
@@ -16,7 +16,7 @@ ell,Greek (Modern),,38.36,23.13,mode1248,ell
 deu,German,,48.649,12.4676,stan1295,deu
 guk,Gumuz,,11.05,35.93,gumu1244,guk
 xed,Hdi,,10.942,13.6881,hdii1240,xed
-hid,Hidatsa,,47.7534,-102.528,hida1246,hid
+hid,Hidatsa,,47.33,-102.0,hida1246,hid
 ian,Iatmul,,-4.30064,143.316,iatm1242,ian
 ibb,Ibibio,,5.15279,7.86688,ibib1240,ibb
 isl,Icelandic,,63.4837,-19.0212,icel1247,isl
@@ -47,6 +47,6 @@ tel,Telugu,,16.4529,78.7024,telu1262,tel
 bbc,Toba Batak,,2.35498,99.1761,bata1289,bbc
 mlu,Toqabaqita,,-8.39233,160.619,toab1237,mlu
 yrk,Tundra Nenets,,66.1775,71.0234,nene1249,yrk
-unm,Unami,,35.0264,-98.3201,unam1242,unm
+unm,Unami,,40.4,-74.3,unam1242,unm
 onu,Unua,,-16.2638,167.599,unua1237,onu
 wiu,Wiru,,-6.35863,144.214,wiru1244,wiu
