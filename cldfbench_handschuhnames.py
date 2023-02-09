@@ -10,7 +10,10 @@ class Dataset(BaseDataset):
     id = "handschuhnames"
 
     def cldf_specs(self):  # A dataset must declare all CLDF sets it creates.
-        return CLDFSpec(module='StructureDataset', dir=self.cldf_dir)
+        return CLDFSpec(
+            module='StructureDataset',
+            dir=self.cldf_dir,
+            metadata_fname='cldf-metadata.json')
 
     def cmd_download(self, args):
         self.raw_dir.xlsx2csv('Handschuh_Names.xlsx')
