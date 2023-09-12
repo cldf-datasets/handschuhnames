@@ -1,5 +1,5 @@
 ID,Name,Description,ColumnSpec,Section
-domain,Domain of application,,,§3.1.1 of Handschuh (2019)
-boundedness,Boundness,,,3.1.2
-transparency,Transparency,,,3.1.3
-symmetry,Symmetry of marking,,,3.1.4
+domain,Domain of application,,,"inflectional or derivational morphology, compounding, or special onymic markers (= name markers)(Handschuh 2019: §3.1.1)"
+boundedness,Boundness of name gender markers,,,"bound marker, free form, or phonological pattern (Handschuh 2019: §3.1.2)"
+transparency,Transparency of name gender markers,,,"opaque, partly transparent, or fully transparent (Handschuh 2019: §3.1.3)"
+symmetry,Symmetry of marking,,,asymmetric or symmetric marking (Handschuh 2019: §3.1.4)

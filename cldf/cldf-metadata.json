@@ -17,13 +17,13 @@
         {
             "rdf:about": "https://github.com/cldf-datasets/handschuhnames",
             "rdf:type": "prov:Entity",
-            "dc:created": "306d62d",
+            "dc:created": "0117d90",
             "dc:title": "Repository"
         },
         {
             "rdf:about": "https://github.com/glottolog/glottolog",
             "rdf:type": "prov:Entity",
-            "dc:created": "v4.7",
+            "dc:created": "v4.8",
             "dc:title": "Glottolog"
         }
     ],
