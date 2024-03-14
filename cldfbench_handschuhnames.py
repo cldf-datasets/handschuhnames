@@ -4,6 +4,8 @@ import collections
 from clldutils.misc import slug
 from cldfbench import Dataset as BaseDataset, CLDFSpec
 
+from pybtex.database import parse_string
+
 
 class Dataset(BaseDataset):
     dir = pathlib.Path(__file__).parent
@@ -22,7 +24,7 @@ class Dataset(BaseDataset):
         args.writer.cldf.add_component('LanguageTable')
         args.writer.cldf.add_component('CodeTable')
         args.writer.cldf.add_component('ParameterTable', 'Section')
-        sources = {r['Source']: r['Bibkey'] for r in self.etc_dir.read_csv('sources.csv', dicts=True)}
+
         params = collections.OrderedDict()
         for row in self.etc_dir.read_csv('parameters.csv', dicts=True):
             params[row['ID']] = []
@@ -39,11 +41,10 @@ class Dataset(BaseDataset):
                 iso, glottocode = None, "nuau1240"
             glang = liso2gl[iso] if iso else args.glottolog.api.languoid(glottocode)
 
-            src = []
-            if (row['Source'] in sources) and sources[row['Source']]:
-                e = args.glottolog.api.bibfiles['hh.bib'][sources[row['Source']]]
-                src = [e.key]
-                args.writer.cldf.sources.add(str(e))
+            if (source_str := row.get('Source')):
+                src = [source_str]
+            else:
+                src = []
 
             args.writer.objects['LanguageTable'].append(dict(
                 ID=slug(row['ISO']),
@@ -70,3 +71,6 @@ class Dataset(BaseDataset):
                     Source=src,
                 ))
         args.writer.objects['CodeTable'] = sorted(args.writer.objects['CodeTable'], key=lambda i: i['ID'])
+
+        sources = parse_string(self.raw_dir.read('Handschuh-Names.bib'), 'bibtex')
+        args.writer.cldf.add_sources(sources)
