@@ -4,7 +4,7 @@ Babel==2.12.1
 bs4==0.0.1
 certifi==2023.7.22
 cldfbench==1.13.0
--e git+https://github.com/cldf-datasets/handschuhnames@0117d9064888a76097f05e5352b42073692ede92#egg=cldfbench_handschuhnames
+-e git+https://github.com/cldf-datasets/handschuhnames@a32e9dcb1393d3bcf6f4851a159d52743c67a1e8#egg=cldfbench_handschuhnames
 cldfcatalog==1.5.1
 cldfzenodo==1.1.0
 clldutils==3.19.0
