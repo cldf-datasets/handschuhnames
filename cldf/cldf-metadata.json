@@ -17,7 +17,7 @@
         {
             "rdf:about": "https://github.com/cldf-datasets/handschuhnames",
             "rdf:type": "prov:Entity",
-            "dc:created": "a32e9dc",
+            "dc:created": "dbd2465",
             "dc:title": "Repository"
         },
         {
@@ -30,7 +30,7 @@
     "prov:wasGeneratedBy": [
         {
             "dc:title": "python",
-            "dc:description": "3.8.10"
+            "dc:description": "3.11.2"
         },
         {
             "dc:title": "python-packages",
@@ -298,10 +298,6 @@
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#columnSpec",
                         "required": false,
                         "name": "ColumnSpec"
-                    },
-                    {
-                        "datatype": "string",
-                        "name": "Section"
                     }
                 ],
                 "primaryKey": [
