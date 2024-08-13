@@ -23,7 +23,7 @@ class Dataset(BaseDataset):
     def cmd_makecldf(self, args):
         args.writer.cldf.add_component('LanguageTable')
         args.writer.cldf.add_component('CodeTable')
-        args.writer.cldf.add_component('ParameterTable', 'Section')
+        args.writer.cldf.add_component('ParameterTable')
 
         params = collections.OrderedDict()
         for row in self.etc_dir.read_csv('parameters.csv', dicts=True):
@@ -31,7 +31,7 @@ class Dataset(BaseDataset):
             args.writer.objects['ParameterTable'].append(dict(
                 ID=slug(row['ID']),
                 Name=row['Name'],
-                Section=row['Section'],
+                Description=row['Description'],
             ))
 
         liso2gl = {l.iso: l for l in args.glottolog.api.languoids() if l.iso}
