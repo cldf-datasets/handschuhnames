@@ -17,7 +17,7 @@
         {
             "rdf:about": "https://github.com/cldf-datasets/handschuhnames",
             "rdf:type": "prov:Entity",
-            "dc:created": "dbd2465",
+            "dc:created": "bb2b514",
             "dc:title": "Repository"
         },
         {
@@ -30,7 +30,7 @@
     "prov:wasGeneratedBy": [
         {
             "dc:title": "python",
-            "dc:description": "3.11.2"
+            "dc:description": "3.8.19"
         },
         {
             "dc:title": "python-packages",
